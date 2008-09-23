@@ -1,0 +1,28 @@
+/*
+	Site ~ Core CSS.
+	Main control sheet for style
+*/
+
+/* =Includes
+----------------------------------------------------------------------------*/
+@import "960.css";
+@import "reset.css";
+@import "text.css";
+
+/* =General
+----------------------------------------------------------------------------*/
+.mir { letter-spacing : -1000em; }
+/* Just for Opera, but hide from MacIE */
+/*\*/html>body .mir { letter-spacing : normal; text-indent : -999em; overflow : hidden;}
+/* End of hack */
+
+p.mir {line-height:0;}
+body {color:#444444; background:url(../img/dm_ui_bgnd.png) top left no-repeat #F1EFDD;}
+
+#content {margin:80px 0 0 200px; width:600px;}
+
+/* =Layout
+----------------------------------------------------------------------------*/
+#player {background:#fff; text-align:center; border:5px solid #384026; padding:20px; margin:20px auto;}
+/* =Typography
+----------------------------------------------------------------------------*/

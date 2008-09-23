@@ -1,0 +1,60 @@
+8
+
+dir
+739
+http://jquery-ui.googlecode.com/svn/trunk/release/build
+http://jquery-ui.googlecode.com/svn
+
+
+
+2008-06-07T20:02:49.897504Z
+207
+eduardo.lundgren
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a1defee3-d24d-0410-b1e3-3171fe540af7
+
+build
+dir
+
+js.jar
+file
+
+
+
+
+2008-09-23T17:43:47.000000Z
+1af0ac8b879216be51d0bd8a9344782d
+2008-06-07T20:02:49.897504Z
+207
+eduardo.lundgren
+has-props
+
+js
+dir
+
+yuicompressor.jar
+file
+
+
+
+
+2008-09-23T17:43:47.000000Z
+d09f35f1d681b98a18256ea048d67c0d
+2008-06-07T20:02:49.897504Z
+207
+eduardo.lundgren
+has-props
+

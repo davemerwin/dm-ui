@@ -1,0 +1,44 @@
+8
+
+dir
+739
+http://jquery-ui.googlecode.com/svn/trunk/demos/real-world/product-slider
+http://jquery-ui.googlecode.com/svn
+
+
+
+2008-09-20T17:30:51.053727Z
+729
+rdworth
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a1defee3-d24d-0410-b1e3-3171fe540af7
+
+images
+dir
+
+index.html
+file
+
+
+
+
+2008-09-23T17:44:37.000000Z
+2ba11fa0f0d74b27ba17e25513ba45b1
+2008-09-20T17:30:51.053727Z
+729
+rdworth
+has-props
+

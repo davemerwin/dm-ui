@@ -1,0 +1,44 @@
+8
+
+dir
+739
+http://jquery-ui.googlecode.com/svn/trunk/release
+http://jquery-ui.googlecode.com/svn
+
+
+
+2008-09-10T00:26:11.355061Z
+669
+cloudream@gmail.com
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a1defee3-d24d-0410-b1e3-3171fe540af7
+
+build
+dir
+
+build.xml
+file
+
+
+
+
+2008-09-23T17:43:47.000000Z
+bf1acb953072bc6c9b21d4baf5bec472
+2008-09-10T00:26:11.355061Z
+669
+cloudream@gmail.com
+has-props
+

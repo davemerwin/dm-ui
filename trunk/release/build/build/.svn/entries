@@ -1,0 +1,54 @@
+8
+
+dir
+739
+http://jquery-ui.googlecode.com/svn/trunk/release/build/build
+http://jquery-ui.googlecode.com/svn
+
+
+
+2008-06-07T20:02:49.897504Z
+207
+eduardo.lundgren
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a1defee3-d24d-0410-b1e3-3171fe540af7
+
+pack.js
+file
+
+
+
+
+2008-09-23T17:43:04.000000Z
+a4697c35e8811db002addd1214a98d85
+2008-06-07T20:02:49.897504Z
+207
+eduardo.lundgren
+has-props
+
+min.js
+file
+
+
+
+
+2008-09-23T17:43:04.000000Z
+933d563886c685fa10569a1a14425184
+2008-06-07T20:02:49.897504Z
+207
+eduardo.lundgren
+has-props
+

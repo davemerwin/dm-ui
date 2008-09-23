@@ -1,0 +1,57 @@
+8
+
+dir
+739
+http://jquery-ui.googlecode.com/svn/trunk/themes/default
+http://jquery-ui.googlecode.com/svn
+
+
+
+2008-09-20T17:42:04.754252Z
+730
+rdworth
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a1defee3-d24d-0410-b1e3-3171fe540af7
+
+images
+dir
+
+ui.all.css
+file
+
+
+
+
+2008-09-23T17:44:14.000000Z
+ed2e78b6aaacaa366460a66c62c0186f
+2008-09-20T17:42:04.754252Z
+730
+rdworth
+has-props
+
+ui.datepicker.css
+file
+
+
+
+
+2008-09-23T17:44:14.000000Z
+28e2c14703fb4d46e47fe05b7afb90dd
+2008-09-20T17:42:04.754252Z
+730
+rdworth
+has-props
+

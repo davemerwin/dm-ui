@@ -1,0 +1,44 @@
+8
+
+dir
+739
+http://jquery-ui.googlecode.com/svn/trunk/demos/real-world/accordion-drawers
+http://jquery-ui.googlecode.com/svn
+
+
+
+2008-09-20T17:30:51.053727Z
+729
+rdworth
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a1defee3-d24d-0410-b1e3-3171fe540af7
+
+images
+dir
+
+index.html
+file
+
+
+
+
+2008-09-23T17:45:26.000000Z
+2ff0af8e7a1e4ec49ad861dd14940997
+2008-09-20T17:30:51.053727Z
+729
+rdworth
+has-props
+

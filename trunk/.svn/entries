@@ -1,0 +1,95 @@
+8
+
+dir
+739
+http://jquery-ui.googlecode.com/svn/trunk
+http://jquery-ui.googlecode.com/svn
+
+
+
+2008-09-23T07:58:29.620291Z
+739
+pazu2k@gmail.com
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a1defee3-d24d-0410-b1e3-3171fe540af7
+
+release
+dir
+
+GPL-LICENSE.txt
+file
+
+
+
+
+2008-09-23T17:45:56.000000Z
+2c1778696d3ba68569a0352e709ae6b7
+2008-06-07T17:35:27.970763Z
+196
+rdworth
+has-props
+
+tests
+dir
+
+version.txt
+file
+
+
+
+
+2008-09-23T17:45:56.000000Z
+44ef1d227960b5d970cdf235eec80429
+2008-09-20T01:12:32.728983Z
+709
+rdworth
+has-props
+
+themes
+dir
+
+demos
+dir
+
+MIT-LICENSE.txt
+file
+
+
+
+
+2008-09-23T17:45:56.000000Z
+8ed895f21c4286fddb79b36980709cd3
+2008-06-07T17:35:27.970763Z
+196
+rdworth
+has-props
+
+jquery-1.2.6.js
+file
+
+
+
+
+2008-09-23T17:45:56.000000Z
+343607636acfee88faa2b638330a3370
+2008-09-20T17:42:04.754252Z
+730
+rdworth
+has-props
+
+ui
+dir
+

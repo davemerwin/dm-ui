@@ -1,0 +1,52 @@
+8
+
+dir
+739
+http://jquery-ui.googlecode.com/svn/trunk/demos/real-world
+http://jquery-ui.googlecode.com/svn
+
+
+
+2008-09-20T17:30:51.053727Z
+729
+rdworth
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a1defee3-d24d-0410-b1e3-3171fe540af7
+
+splitpane
+dir
+
+effects
+dir
+
+product-slider
+dir
+
+photo-manager
+dir
+
+accordion-drawers
+dir
+
+image-cropper
+dir
+
+range-interface
+dir
+
+layout
+dir
+
