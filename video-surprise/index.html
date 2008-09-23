@@ -8,20 +8,34 @@
     <meta name="generator" content="TextMate http://macromates.com/">
     <meta name="author" content="David Merwin">
     <!-- Date: 2008-09-13 -->
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/960.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/text.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/site.css">
     
-    <link rel="stylesheet" type="text/css" media="screen" href="css/site.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/child.css">
     
     <script type="text/javascript" src="../js/jquery-1.2.6.js"></script>
     <script type="text/javascript" src="../js/flashembed.min.js"></script>
+    <script type="text/javascript" src="../js/facebox.js"></script>
     
     <script type="text/javascript" src="js/site.settings.js"></script>
     
 </head>
 <body>
+    <div id="globalNav">
+        
+        <ul>
+            <li><a href="http://www.davemerwin.com">davemerwin.com</a></li>
+            <li><a href="/">UI Home</a></li>
+        </ul>
+    </div>
     <div class="container_16">
+        <div id="capturePanel">
+            <img src="http://farm4.static.flickr.com/3163/2779839495_26aa765d40.jpg" alt="My Kids">
+            <form action="" method="post" accept-charset="utf-8">
+                <input type="button" name="some_name" value="" id="choice1" class="choices">
+                <input type="button" name="some_name" value="" id="choice2" class="choices">
+                <input type="button" name="some_name" value="" id="choice3" class="choices">
+            </form>
+        </div>
         <div id="player" class="grid_14">
             <div id="flashPlayerBlock"><a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.</div>
 
@@ -45,8 +59,8 @@
                             }}
                         );
                         function onClipDone(clip) {
-                            //$('#capturePanel').facebox();
-                            alert('Hello!');
+                            $('#capturePanel').facebox();
+                            //alert('Hello!');
                         };
                         console.info(flashembed);
                     </script>

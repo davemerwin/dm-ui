@@ -1,0 +1,9 @@
+#capturePanel {position:relative;}
+#choice1 {width:60px; height:60px; position:absolute; top:240px; left:80px;}
+#choice2 {width:60px; height:60px; position:absolute; top:300px; left:100px;}
+#choice3 {width:60px; height:60px; position:absolute; top:240px; left:140px;}
+.choices {background:transparent; border:none;}
+.choices:hover {outline:1px solid yellow;}
+
+
+#player {background:#fff; text-align:center; border:5px solid #C7C3A1; padding:20px; margin:20px auto;}
