@@ -1,0 +1,27 @@
+/*
+	Site ~ Core CSS.
+	Main control sheet for style
+*/
+
+/* =General
+----------------------------------------------------------------------------*/
+.mir { letter-spacing : -1000em; }
+/* Just for Opera, but hide from MacIE */
+/*\*/html>body .mir { letter-spacing : normal; text-indent : -999em; overflow : hidden;}
+/* End of hack */
+
+p.mir {line-height:0;}
+body {color:#444444; background:#657446;}
+
+#capturePanel {position:relative;}
+#choice1 {width:60px; height:60px; position:absolute; top:240px; left:80px;}
+#choice2 {width:60px; height:60px; position:absolute; top:300px; left:100px;}
+#choice3 {width:60px; height:60px; position:absolute; top:240px; left:140px;}
+.choices {background:transparent; border:none;}
+.choices:hover {outline:1px solid yellow;}
+
+/* =Layout
+----------------------------------------------------------------------------*/
+#player {background:#fff; text-align:center; border:5px solid #384026; padding:20px; margin:20px auto;}
+/* =Typography
+----------------------------------------------------------------------------*/

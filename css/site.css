@@ -19,10 +19,14 @@
 p.mir {line-height:0;}
 body {color:#444444; background:url(../img/dm_ui_bgnd.png) top left no-repeat #F1EFDD;}
 
-#content {margin:80px 0 0 200px; width:600px;}
-
 /* =Layout
 ----------------------------------------------------------------------------*/
-#player {background:#fff; text-align:center; border:5px solid #384026; padding:20px; margin:20px auto;}
+#content {margin:80px 0 0 200px; width:600px; background:#FAF9ED; border:1px solid #C7C3A1; padding:20px 20px 0;}
+
 /* =Typography
 ----------------------------------------------------------------------------*/
+#content h1, #content h2, #content h3, #content h4, #content h5 {padding:0; margin:0; letter-spacing:-1px; color:#446A88;}
+
+a {color:#A25913; text-decoration:none; font-weight:bold;}
+a:visited {color:#1E2F3C;}
+a:hover {color:#D36C00; text-decoration:underline;}
