@@ -1,6 +1,5 @@
-
 /**
- * flowembed 0.10. Flowplayer embedding script
+ * flowembed 0.11. Flowplayer embedding script
  * 
  * http://flowplayer.org/tools/flow-embed.html
  *
@@ -12,8 +11,7 @@
  * >> Basically you can do anything you want but leave this header as is <<
  *
  * Version: 0.10 - 05/19/2008
- */
- 
+ */ 
 (function($) {		
 	
 	// jQuery plugin initialization
@@ -31,7 +29,8 @@
 		var opts = {
 			oneInstance: true,
 			activeClass: 'playing',
-			overlayClass: 'playButton'
+			overlayClass: 'playButton',
+			fallback: null
 		};	
 		
 		$.extend(opts, embedOpts);
@@ -41,19 +40,27 @@
 		
 		root.click(function(event) {			
 			
-			// oneInstance previously playing video	
+			// disable default behaviour
+			event.preventDefault();
+			
+			if (root.find("embed, object").length) return false;
+				
+			// if oneInstance = true, resume previously playing video	
 			if (opts.oneInstance) onClipDone();
 			
 			// save nested HTML content for resuming purposes
 			root.addClass(opts.activeClass).data("html", root.html());
 			
 			// build flowplayer with videoFile supplied in href- attribute
-			config.videoFile = root.attr("href"); 			
+			var href = root.attr("href");
+			config.videoFile = href; 			
 
-			player = flashembed(this, params, {config:config});
+			// possible fallback
+			if (opts.fallback && !flashembed.isSupported([9,115])) {
+				config.videoFile = href.substring(0, href.lastIndexOf(".") + 1) + opts.fallback;				
+			}			
 			
-			// disable default behaviour
-			return false;
+			player = flashembed(this, params, {config:config});
 			
 		}); 
 
@@ -76,4 +83,3 @@
 	}
 
 })(jQuery);
-

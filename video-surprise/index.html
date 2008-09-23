@@ -9,11 +9,12 @@
     <meta name="author" content="David Merwin">
     <!-- Date: 2008-09-13 -->
     <link rel="stylesheet" type="text/css" media="screen" href="../css/site.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/facebox.css">
     
     <link rel="stylesheet" type="text/css" media="screen" href="css/child.css">
     
     <script type="text/javascript" src="../js/jquery-1.2.6.js"></script>
-    <script type="text/javascript" src="../js/flashembed.min.js"></script>
+    <script type="text/javascript" src="../js/flashembed.js"></script>
     <script type="text/javascript" src="../js/facebox.js"></script>
     
     <script type="text/javascript" src="js/site.settings.js"></script>
@@ -21,7 +22,6 @@
 </head>
 <body>
     <div id="globalNav">
-        
         <ul>
             <li><a href="http://www.davemerwin.com">davemerwin.com</a></li>
             <li><a href="/">UI Home</a></li>
@@ -36,11 +36,11 @@
                 <input type="button" name="some_name" value="" id="choice3" class="choices">
             </form>
         </div>
-        <div id="player" class="grid_14">
+        <div id="player" class="grid_10">
             <div id="flashPlayerBlock"><a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.</div>
-
                 <script>
-                        flashembed("flashPlayerBlock", 
+                        flashembed("flashPlayerBlock",
+                        //debugger; 
                         /* standard Flash parameters. http://kb.adobe.com/selfservice/viewContent.do?externalId=tn_12701 */
                             {
                                 src:'video/FlowPlayerLight.swf',
@@ -51,7 +51,7 @@
 
                             /* Flowplayer specific configuration. http://flowplayer.org/player/configuration.html */
                             {config: {
-                                autoPlay:false,
+                                autoPlay:true,
                                 initialScale: 'scale',
                                 videoFile: 'pbi_bumper_1_w_sound.flv',
                                 loop:false,
@@ -60,12 +60,12 @@
                         );
                         function onClipDone(clip) {
                             $('#capturePanel').facebox();
-                            //alert('Hello!');
+                    		alert('Done');
                         };
-                        console.info(flashembed);
+                        console.log(flashembed);
                     </script>
                 </div>
-        
+        <a href="#capturePanel" rel="facebox" class="fbShow">Show Panel</a>
         </div>
     </div>
 </body>

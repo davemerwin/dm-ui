@@ -29,7 +29,6 @@
  *  You can also use it programmatically:
  * 
  *    jQuery.facebox('some html')
- *    jQuery.facebox('some html', 'my-groovy-style')
  *
  *  The above will open a facebox with "some html" as the content.
  *    
@@ -40,14 +39,10 @@
  *  The above will show a loading screen before the passed function is called,
  *  allowing for a better ajaxy experience.
  *
- *  The facebox function can also display an ajax page, an image, or the contents of a div:
+ *  The facebox function can also display an ajax page or image:
  *  
  *    jQuery.facebox({ ajax: 'remote.html' })
- *    jQuery.facebox({ ajax: 'remote.html' }, 'my-groovy-style')
- *    jQuery.facebox({ image: 'stairs.jpg' })
- *    jQuery.facebox({ image: 'stairs.jpg' }, 'my-groovy-style')
- *    jQuery.facebox({ div: '#box' })
- *    jQuery.facebox({ div: '#box' }, 'my-groovy-style')
+ *    jQuery.facebox({ image: 'dude.jpg' })
  *
  *  Want to close the facebox?  Trigger the 'close.facebox' document event:
  *
@@ -69,9 +64,9 @@
   $.facebox = function(data, klass) {
     $.facebox.loading()
 
-    if (data.ajax) fillFaceboxFromAjax(data.ajax, klass)
-    else if (data.image) fillFaceboxFromImage(data.image, klass)
-    else if (data.div) fillFaceboxFromHref(data.div, klass)
+    if (data.ajax) fillFaceboxFromAjax(data.ajax)
+    else if (data.image) fillFaceboxFromImage(data.image)
+    else if (data.div) fillFaceboxFromHref(data.div)
     else if ($.isFunction(data)) data.call($)
     else $.facebox.reveal(data, klass)
   }
@@ -82,10 +77,10 @@
 
   $.extend($.facebox, {
     settings: {
-      opacity      : 0,
+      opacity      : .95,
       overlay      : true,
-      loadingImage : '/facebox/loading.gif',
-      closeImage   : '/facebox/closelabel.gif',
+      loadingImage : '../img/loading.gif',
+      closeImage   : '../img/closelabel.gif',
       imageTypes   : [ 'png', 'jpg', 'jpeg', 'gif' ],
       faceboxHtml  : '\
     <div id="facebox" style="display:none;"> \
@@ -128,7 +123,7 @@
 
       $('#facebox').css({
         top:	getPageScroll()[1] + (getPageHeight() / 10),
-        left:	$(window).width() / 2 - 205 
+        left:	385.5
       }).show()
 
       $(document).bind('keydown.facebox', function(e) {
@@ -173,7 +168,7 @@
       return false
     }
 
-    return this.bind('click.facebox', clickHandler)
+    return this.click(clickHandler)
   }
 
   /*
@@ -189,7 +184,7 @@
     makeCompatible()
 
     var imageTypes = $.facebox.settings.imageTypes.join('|')
-    $.facebox.settings.imageTypesRegexp = new RegExp('\.(' + imageTypes + ')$', 'i')
+    $.facebox.settings.imageTypesRegexp = new RegExp('\.' + imageTypes + '$', 'i')
 
     if (settings) $.extend($.facebox.settings, settings)
     $('body').append($.facebox.settings.faceboxHtml)
@@ -256,7 +251,7 @@
     if (href.match(/#/)) {
       var url    = window.location.href.split('#')[0]
       var target = href.replace(url,'')
-      $.facebox.reveal($(target).show().replaceWith("<div id='facebox_moved'></div>"), klass)
+      $.facebox.reveal($(target).clone().show(), klass)
 
     // image
     } else if (href.match($.facebox.settings.imageTypesRegexp)) {
@@ -286,7 +281,7 @@
   function showOverlay() {
     if (skipOverlay()) return
 
-    if ($('#facebox_overlay').length == 0) 
+    if ($('facebox_overlay').length == 0) 
       $("body").append('<div id="facebox_overlay" class="facebox_hide"></div>')
 
     $('#facebox_overlay').hide().addClass("facebox_overlayBG")
@@ -315,8 +310,7 @@
   $(document).bind('close.facebox', function() {
     $(document).unbind('keydown.facebox')
     $('#facebox').fadeOut(function() {
-      if ($('#facebox_moved').length == 0) $('#facebox .content').removeClass().addClass('content')
-      else $('#facebox_moved').replaceWith($('#facebox .content').children().hide())
+      $('#facebox .content').removeClass().addClass('content')
       hideOverlay()
       $('#facebox .loading').remove()
     })
