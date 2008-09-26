@@ -33,12 +33,12 @@
         <script> flashembed("flashPlayerBlock",
         //debugger;
         /* standard Flash parameters. http://kb.adobe.com/selfservice/viewContent.do?externalId=tn_12701 */
-                            {
-                            src:'video/FlowPlayerLight.swf',
-                            width: 480,
-                            height: 360,
-                            allowscriptaccess:'always'
-                            },
+        {
+        src:'video/FlowPlayerLight.swf',
+        width: 480,
+        height: 360,
+        allowscriptaccess:'always'
+        },
 
                             /* Flowplayer specific configuration. http://flowplayer.org/player/configuration.html */
                             {config: {
@@ -50,7 +50,9 @@
                             }}
                         );
                         function onClipDone(clip) {
-                            jQuery.facebox(jQuery.html('#capturePanel'));
+                            jQuery.facebox(function(){
+                                jQuery.html('#capturePane')
+                            });
                         };
                     </script>
                 </div>

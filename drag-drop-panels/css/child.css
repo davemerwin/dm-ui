@@ -1,0 +1,8 @@
+#blog, #twit, #magnolia, #vimeo, #tumblr, #flickr {position:absolute; width:300px; height:300px;}
+
+#blog {background:#5F727E; top:100px; left:100px;}
+#twit {background:#788B99; top:450px; left:200px;}
+#magnolia {background:#B2BDC5; top:200px; left:300px;}
+#vimeo {background:#CDBBAA; top:300px; left:600px;}
+#tumblr {background:#BAA18A; top:500px; left:100px;}
+#flickr {background:#E0D5CA; top:80px; left:50px;}

@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>video-surprise/js/site.settings.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -35,43 +33,10 @@
 			<key>firstVisibleLine</key>
 			<integer>53</integer>
 		</dict>
-		<key>video-surprise/css/child.css</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>103</integer>
-				<key>line</key>
-				<integer>9</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>video-surprise/js/site.settings.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>18</integer>
-				<key>line</key>
-				<integer>3</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>video-surprise/css/child.css</string>
-		<string>video-surprise/js/site.settings.js</string>
-	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{210, 4}, {1710, 1174}}</string>
+	<string>{{317, -70}, {1710, 1174}}</string>
 </dict>
 </plist>
