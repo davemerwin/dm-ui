@@ -1,0 +1,35 @@
+/*
+	Site ~ Core CSS.
+	Main control sheet for style
+*/
+
+/* =Includes
+----------------------------------------------------------------------------*/
+@import "960.css";
+@import "reset.css";
+@import "text.css";
+
+/* =General
+----------------------------------------------------------------------------*/
+.mir { letter-spacing : -1000em; }
+/* Just for Opera, but hide from MacIE */
+/*\*/html>body .mir { letter-spacing : normal; text-indent : -999em; overflow : hidden;}
+/* End of hack */
+
+p.mir {line-height:0;}
+body {color:#444444; background:url(/media/img/dm_ui_bgnd.png) top left no-repeat #F1EFDD;}
+
+/* =Layout
+----------------------------------------------------------------------------*/
+#content {margin:80px 0 0 200px; width:600px; background:#FAF9ED; border:1px solid #C7C3A1; padding:20px 20px 0;}
+
+#globalNav {background:#7B7865; height:26px; position:absolute; bottom:0; left:0; right:0;}
+#globalNav li {display:inline; list-style:none; padding:0 10px; height:26px; line-height:26px;}
+#globalNav li a {height:26px; line-height:26px; color:#fff;}
+/* =Typography
+----------------------------------------------------------------------------*/
+#content h1, #content h2, #content h3, #content h4, #content h5 {padding:0; margin:0; letter-spacing:-1px; color:#446A88;}
+
+a {color:#A25913; text-decoration:none; font-weight:bold;}
+a:visited {color:#1E2F3C;}
+a:hover {color:#D36C00; text-decoration:underline;}

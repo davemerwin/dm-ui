@@ -1,6 +1,8 @@
 $(document).ready(function(){
-    
-    $('#capturePanel').hide();
-	$('a[rel*=facebox]').facebox();
-
+	$('#capturePanel').hide();
 });
+function onClipDone(clip) {
+	console.log('clip done')
+	console.dir(clip);
+	$.facebox($('#capturePanel').html());
+}
