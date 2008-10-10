@@ -23,6 +23,9 @@ body {color:#444444; background:url(../img/dm_ui_bgnd.png) top left no-repeat #F
 ----------------------------------------------------------------------------*/
 #content {margin:80px 0 0 200px; width:600px; background:#FAF9ED; border:1px solid #C7C3A1; padding:20px 20px 0;}
 
+p.licenseP {margin:0;}
+.cc img {margin:0 0 20px 0;}
+
 #globalNav {background:#7B7865; height:26px; position:absolute; bottom:0; left:0; right:0;}
 #globalNav li {display:inline; list-style:none; padding:0 10px; height:26px; line-height:26px;}
 #globalNav li a {height:26px; line-height:26px; color:#fff;}

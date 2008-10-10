@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Wise Rides Video Popin</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="David Merwin"> <!-- Date: 2008-09-13 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/text.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/960.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/facebox.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/child.css">
+	<script type="text/javascript" src="../../js/jquery-1.2.6.js"></script>
+	<script type="text/javascript" src="../../js/flashembed.js"></script>
+	<script type="text/javascript" src="../../js/facebox.js"></script>
+	<script type="text/javascript" src="js/site.settings.js"></script>
+</head>
+<body>
+	<div class="container_16">
+		<div id="capturePanel">
+			<img src="img/3d-perspective.jpg" alt="My Kids">
+			<form action="" method="post" accept-charset="utf-8">
+				<a href="" class="input1 choices"></a>
+				<input type="button" name="some_name" value="" class="input2 choices">
+				<input type="button" name="some_name" value="" class="input3 choices">
+				<input type="button" name="some_name" value="" class="input4 choices">
+			</form>
+			<p class="inputText1 choiceInputNo">Uh Oh! That is not a hazard.</p>
+            <p class="inputText2 choiceInputNo">Uh Oh! That is not a hazard.</p>
+            <p class="inputText3 choiceInputYes">That was great! That was a hazard.</p>
+            <p class="inputText4 choiceInputYes">That was great! That was a hazard.</p>
+		</div>
+		<div id="player" class="grid_10">
+			<div id="flashPlayerBlock"><a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.</div>
+			<script>
+			$('#flashPlayerBlock').flashembed(
+				{
+					src:'video/FlowPlayerLight.swf',
+					width: 320,
+					height: 240,
+					allowscriptaccess:'always'
+				},
+				/* Flowplayer specific configuration. http://flowplayer.org/player/configuration.html */
+				{
+					config: {
+						autoPlay:true,
+						initialScale: 'scale',
+						videoFile: 'helmet_cam_one.mov',
+						loop:false,
+						showMenu:false
+					}
+				}
+			);
+			</script>
+		</div>
+		<a href="#capturePanel" rel="facebox" class="fbShow">Show Panel</a>
+        <p>When the pop-in appears, select hazards as fast as you can.</p>
+	</div>
+</body>
+</html>
